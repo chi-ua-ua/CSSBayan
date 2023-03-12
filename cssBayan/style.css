@@ -60,6 +60,7 @@ body {
     margin: 0 0 2rem 0;
     text-align: left;
 }
+
 .mem {
     cursor: pointer;
     display: flex;
@@ -67,6 +68,10 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.container:hover {
+    color: black;
 }
 
 .mem:hover .mem-icon {
@@ -78,6 +83,7 @@ body {
     display: block;
    
 }
+
 .mem:hover > .mem-image img{
     transform: scale(100%);
 }
@@ -92,8 +98,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid black;
+    border-bottom: solid rgb(71, 70, 70);
     column-gap: 1rem;
+    color: rgba(36, 101, 199, 0.959);
 }
 
 
@@ -129,4 +136,48 @@ input:checked ~ .mem-row .mem-icon {
     height: 25rem;
     display: block;
     transform: scale(50%);
+}
+
+@media (max-width:820px) {
+    .bayan-title {
+        font-size: 2rem;
+        margin: 0 0 1rem 0;
+        text-align: left;
+    }
+    .mem-text {
+        font-size: 1.2rem;
+    }
+    .mem-image img {
+        width: 15rem;
+        height: 15rem;
+        transform: scale(50%);
+    }
+    .mem-icon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:320px) {
+    .bayan-title {
+        font-size: 1rem;
+        margin: 0 0 0.5rem 0;
+        text-align: left;
+    }
+    .mem-row {
+        width: 100%;
+        min-height: 2rem;
+        column-gap: 1rem;
+        border-bottom: 0.1rem solid;
+        color: ;
+    }
+    .mem-text {
+        font-size: 0.5rem;
+    }
+    .mem-image img {
+        width: 7rem;
+        height: 7rem;
+    }
+    .mem-icon {
+        font-size: 1rem;
+    }
 }
